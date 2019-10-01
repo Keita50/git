@@ -1,0 +1,245 @@
+body{
+    font-family: sans-serif;
+    margin:0px;
+    background-color: #4e454a;
+    height: 70px;
+}
+
+header{
+    text-align: center;   
+}
+
+nav{
+    margin-top:0px;
+    margin-bottom: 0px;
+    display:inline-block;
+    text-decoration: none; 
+}    
+
+li{
+    font-size:15px; 
+    border:2px solid #f0f8ff;
+    padding:10px 10px;
+    margin-top: 10px;
+    margin-right:20px;
+    display:inline-block;
+
+}
+
+header a{
+    text-decoration: none;
+    color:#f0f8ff;
+
+}
+
+li :hover{
+    opacity: 0.8;
+    text-decoration:none;
+}
+
+.site-ttl{
+    height:500px;
+    background-image: url(../img/name01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-top:150px;
+    font-size:70px;
+    color: whitesmoke;
+    margin-left:400px;
+}
+
+.site-ttl p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size:40px;
+    color: whitesmoke;
+    margin-left:400px;
+
+}
+
+.profile{
+    height:400px;
+    background-image: url(..//img/about01.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    text-align: center;
+}
+
+h2{
+    margin-block-start: 0em;
+    margin-block-end: 0em;   
+    margin-bottom: 30px; 
+    font-size: 40px;
+}
+
+.profile h2{
+    margin-block-start: 0em;
+    margin-block-end: 0em;   
+    margin-bottom: 30px; 
+    font-size: 40px;
+    color:whitesmoke;
+}
+
+.profile li{
+    font-size: 20px;
+    border:none;
+    color:white;
+    text-align: center;
+    display:block;
+}
+
+.skills{
+    text-align: center;
+    background-color: #f0f8ff;
+    height: 300px;
+}
+
+.graph{
+    position: relative;
+    width: 500px;
+    padding: 2px;
+    margin-left: 500px;
+}
+
+.html{
+    border: 1px solid #207870;
+    margin-bottom: 10px;
+}
+
+.html .bar{
+    display:block;
+    position:relative;
+    background:#207870;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+
+.PHP{
+    border: 1px solid #9932cc;    
+    margin-bottom: 10px;
+}
+
+.PHP .bar{
+    display:block;
+    position:relative;
+    background:#9932cc;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+
+.JQuery{
+    border: 1px solid #2f4f4f;    
+    margin-bottom: 10px;
+}
+
+.JQuery .bar{
+    display:block;
+    position:relative;
+    background:#2f4f4f;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+
+.Passion{
+    border: 1px solid #dc143c;
+    margin-bottom: 10px;
+
+}
+
+.Passion .bar{
+    display:block;
+    position:relative;
+    background:#dc143c;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+
+.works{
+    text-align: center;
+    height: 300px;
+    background-color: #f0f6da;
+}
+
+.works h1{
+    margin-top:0px;
+}
+
+.works p{
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+.contact-form{
+    height: 400px;
+    background-color: #1f3134;
+    color:white;
+    text-align: center;
+}
+
+.contact-form h1{
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    text-align: center;
+
+}
+
+.contact-form i{
+    margin-right: 10px;
+}
+
+.fa-facebook{
+    font-size: 20px;
+
+}
+
+.my-violet{
+    color: #434da2;
+}
+
+.my-blue{
+    color:skyblue;
+}
+
+.contact-form {
+    padding-top: 100px;
+}
+  
+
+input{
+    width:400px;
+    margin:10px 0 30px 0;
+    padding:20px 20px;
+    font-size:18px;
+    border:1px solid #dee7ec;
+}
+  
+textarea{
+    width:400px;
+    margin:10px 0 30px 0;
+    padding:20px 20px;
+    font-size:18px;
+    border:1px solid #dee7ec;
+}
+  
+.contact-submit{
+    background-color:#dee7ec;
+    color:#889eab;
+
+}
