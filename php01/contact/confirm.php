@@ -27,14 +27,16 @@
                         <span><?php echo $_POST['password']; ?></span>
                     </li>
                 </ul>
-                <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>"> 
-                <input type="hidden" name="inquiry_content" value="<?php echo $_POST['inquiry_content']; ?>" >
-                <input type="hidden" name="password" value="<?php echo $_POST['password']; ?>">
                 <div class="submit-group">
                     <input type="submit" name="form_post" id="form_post" value="送信する" >
                 </div>
             </form>
-            <form  class="back" action="..//index.php" method="POST"><input type="submit" name="back" id="back" value="修正する"></form>
+            <form  class="back" action="..//index.php" method="POST"><input type="submit" name="back" id="back" value="修正する">
+                <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>"> 
+                <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>"> 
+                <input type="hidden" name="inquiry_content" value="<?php echo $_POST['inquiry_content']; ?>" >
+                <input type="hidden" name="password" value="<?php echo $_POST['password']; ?>">
+            </form>
         </section>
 	</main>
     <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . '..//template/footer.php'); ?>

@@ -1,3 +1,8 @@
+  
+<?php
+$name = (!empty($_POST['name'])) ? $_POST['name'] : '';
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
