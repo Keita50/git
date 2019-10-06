@@ -185,43 +185,30 @@ h2{
     font-size: 30px;
 }
 
-.contact-form{
-    height: 400px;
+
+footer{
+    height:1200px;
     background-color: #1f3134;
+
+}
+
+.contact-form{
     color:white;
     text-align: center;
 }
 
-.contact-form h1{
+
+.contact-form h3{
     font-size: 28px;
     padding-bottom: 15px;
     margin-top: 0px;
     text-align: center;
-
 }
 
 .contact-form i{
     margin-right: 10px;
 }
-
-.fa-facebook{
-    font-size: 20px;
-
-}
-
-.my-violet{
-    color: #434da2;
-}
-
-.my-blue{
-    color:skyblue;
-}
-
-.contact-form {
-    padding-top: 100px;
-}
   
-
 input{
     width:400px;
     margin:10px 0 30px 0;
@@ -242,4 +229,69 @@ textarea{
     background-color:#dee7ec;
     color:#889eab;
 
+}
+
+.form-content {
+    width: 100%;
+    max-width: 640px;
+    padding: 30px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.16);
+}
+.form-content h2 {
+    margin: 0 auto 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.form-content li {
+    font-size: 12px;
+}
+.form-content ul li + li {
+    margin-top: 20px;
+}
+.form-content li label em {
+    margin-left: .2em;
+    color: #ff2121;
+}
+.form-content input,
+.form-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-content textarea {
+    min-height: 60px;
+}
+.form-content li span {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    background: #efefef;
+    border-radius: 3px;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+}
+#form_post {
+    display: block;
+    max-width: 300px;
+    margin: 30px auto 0;
+    background: #f9665b;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-content{
+    height:500px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.submit-group{
+    float: left;
 }
