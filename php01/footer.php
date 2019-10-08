@@ -1,5 +1,5 @@
     <footer>
-        <form action="..//contact/confirm.php" method="POST">  
+        <form action="./contact/confirm.php" method="POST">  
             <div class="contact-form">  
                 <a id="contact-form"></a>
                 <h3>Contact form</h3>
@@ -8,7 +8,7 @@
                 <p>メールアドレス<em>*</em></p>    
                     <input name="email" type="email"  id="email" required="required" value="<?php echo $_POST['email']; ?>"/>
                 <p>お問い合わせ内容（必須)</p>
-                    <textarea name="inquiry_content" id="inquiry_content" cols="30" rows="10" value="<?php echo $_POST['inquiry_content']; ?>"></textarea>
+                    <textarea name="inquiry_content" id="inquiry_content" cols="30" rows="10" ><?php echo $_POST['inquiry_content']; ?></textarea>
                 <p>Password<em>*</em></p>
                     <input type="password" name="password" minlength="8" value="<?php echo $_POST['password']; ?>"/>
                 <p></p>
