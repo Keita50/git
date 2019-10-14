@@ -34,6 +34,8 @@
                 </ul>
                 <div class="submit-group">
                     <input type="submit" class="form_post" name="form_post" id="form_post" value="送信する" >
+                    <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>"> 
+
                 </div>
             </form>
             <form  class="back" action="../index.php" method="POST"><input type="submit" name="back" id="back" value="修正する">
@@ -44,6 +46,6 @@
             </form>
         </section>
 	</main>
-    <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . './template/footer.php'); ?>
+    <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . '../template/footer.php'); ?>
 </body>
 </html>
