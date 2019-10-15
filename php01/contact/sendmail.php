@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 Dotenv::load(__DIR__);
  
-$sendgrid_username = $_ENV['sg828g6q@kke.com'];
+$sendgrid_username = $_ENV[''];
 $sendgrid_password = $_ENV['your_password'];
 $from              = $_ENV['keita.igarashi555@gmail.com'];
 $to                = $_ENV['bov.talk@gmail.com'];
