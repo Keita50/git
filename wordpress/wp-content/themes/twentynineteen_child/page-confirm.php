@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
     <title>My Profile</title>
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -11,7 +11,7 @@
 <body>
 	<main>
         <section class="form-content">
-            <form action="submit.php" method="POST" id="form">
+            <form action="./submit.php" method="POST" id="form">
                 <h2>お問い合わせ内容の確認</h2>
                 <ul>
                     <li>
@@ -38,7 +38,7 @@
 
                 </div>
             </form>
-            <form  class="back" action="../index.php" method="POST"><input type="submit" name="back" id="back" value="修正する">
+            <form  class="back" action="./index.php" method="POST"><input type="submit" name="back" id="back" value="修正する">
                 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>"> 
                 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>"> 
                 <input type="hidden" name="inquiry_content" value="<?php echo $_POST['inquiry_content']; ?>" >
@@ -46,6 +46,6 @@
             </form>
         </section>
 	</main>
-    <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . '../template/footer.php'); ?>
+    <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . './template/footer.php'); ?>
 </body>
 </html>

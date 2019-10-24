@@ -76,7 +76,7 @@ get_header();
                     </div>
                 </div>
             </section>
-            <form action="../confirm.php" method="POST">  
+            <form action="<?php echo home_url(); ?>/confirm/" method="POST">  
                 <div class="contact-form"> 
                     <a id="contact"></a> 
                     <h3>Contact form</h3>
