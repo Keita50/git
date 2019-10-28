@@ -27,15 +27,13 @@
 		<header>
             <a id="home"></a>
             <h2>Keita Igarashi</h2>				
-                <nav>
                     <div class="header-right">
-						<a href="#home">Home</a>
-                        <a href="#works">Works</a>
-                        <a href="#about">About</a>						
-                        <a href="#contact">Get in Touch</a>
+						<a class="a" href="#home">Home</a>
+                        <a class="a" href="#works">Works</a>
+                        <a class="a" href="#about">About</a>						
+                        <a class="a" href="#contact">Get in Touch</a>
                     </div>    
                     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800' rel='stylesheet' type='text/css'>            
-                </nav>
-			<!-- #ハンバーガーメニュー -->			
+            
 		</header><!-- #masthead -->
 

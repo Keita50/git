@@ -21,25 +21,36 @@ get_header();
     <head>
     <meta charset="utf-8">
             <link rel="stylesheet" href="./style.css">
-            <link rel="stylesheet" href="./reset.css">
             <title>Portofolio Site</title>
             <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script type="text/javascript">
+            $(function(){
+                $('a[href^=#]').click(function(){
+                    var speed = 700;
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $("html, body").animate({scrollTop:position}, speed, "swing");
+                    return false;
+                });
+            });
+            </script>
     </head>
     <body>
         <main>
-            <section class="works">
             <a id="works"></a>
-                <h2>Works</h2>
-                
+            <section class="works">
+                <h2>Works</h2>            
                 <div class="working">
                     <img src="./wp-content/themes/twentynineteen_child/images/work01.jpg" alt="portfolio1">
                     <img src="./wp-content/themes/twentynineteen_child/images/work02.jpg" alt="portfolio2">
                 </div>
             </section>
-            <section class="about">                
-                <div class="about1">
-                    <a id="about"></a>
+            <a id="about"></a>
+            <section class="about">                        
+                <div class="about1">                    
                 <h2>About Me</h2>
                     <p>東京の多摩市に本拠を置くフロントエンド開発者であり、</br>
                         シンプルさ、美しさを念頭に置いた使いやすいインターフェイスを設計します。</br>
@@ -76,9 +87,10 @@ get_header();
                     </div>
                 </div>
             </section>
-            <form action="<?php echo home_url(); ?>/confirm/" method="POST">  
-                <div class="contact-form"> 
-                    <a id="contact"></a> 
+            <a id="contact"></a> 
+            <section>
+            <form action="<?php echo get_stylesheet_directory_uri(); ?>/page-confirm.php" method="POST">          
+                <div class="contact-form">             
                     <h3>Contact form</h3>
                     <p>名前<em>*</em></p>
                         <input name="name" type="text" id="name" required="required" value="<?php echo $_POST['name']; ?>"/>
@@ -91,7 +103,8 @@ get_header();
                     <p></p>
                         <input class="contact-submit" type="submit" value="入力内容の確認" name="remarks"> 
                 </div>
-            </form>        
+            </form>  
+            </section>      
         </main>
     </body>    
 </html>

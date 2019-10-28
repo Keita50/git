@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <link rel="stylesheet" href="./style.css">
     <title>My Profile</title>
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -46,6 +46,6 @@
             </form>
         </section>
 	</main>
-    <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . './template/footer.php'); ?>
+    <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . './footer.php'); ?>
 </body>
 </html>
