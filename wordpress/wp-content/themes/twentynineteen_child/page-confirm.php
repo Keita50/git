@@ -38,7 +38,7 @@
 
                 </div>
             </form>
-            <form  class="back" action="./index.php" method="POST"><input type="submit" name="back" id="back" value="修正する">
+            <form  class="back" action="<?php echo home_url(); ?>" method="POST"><input type="submit" name="back" id="back" value="修正する">
                 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>"> 
                 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>"> 
                 <input type="hidden" name="inquiry_content" value="<?php echo $_POST['inquiry_content']; ?>" >

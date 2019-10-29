@@ -17,7 +17,7 @@
                 お問い合わせいただきました内容につきましては、<br>担当者より改めてご連絡させていただきます。<br><br>
                 <span>万が一メールが届かない場合は、<br>お手数ですが<b>keita.igarashi555@gmail.com</b>に<br>ご連絡いただきますようお願い致します。</span>
             </p>
-            <p class="back-top"><a href="./index.php">ポートフォリオサイトに戻る</a></p>
+            <p class="back-top"><a href="<?php echo home_url(); ?>">ポートフォリオサイトに戻る</a></p>
         </section>
         <?php
           mb_language("Japanese");
