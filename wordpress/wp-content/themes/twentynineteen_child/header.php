@@ -16,7 +16,42 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
+    <title>Portofolio Site</title>
+    <meta charset="utf-8">
+                <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                <script type="text/javascript">
+                $(function(){
+                    $('a[href^=#]').click(function(){
+                        var speed = 700;
+                        var href= $(this).attr("href");
+                        var target = $(href == "#" || href == "" ? 'html' : href);
+                        var position = target.offset().top;
+                        $("html, body").animate({scrollTop:position}, speed, "swing");
+                        return false;
+                    });
+                });
+                </script>
+
+
 	<?php wp_head(); ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" />
+    <script>
+    $(function(){
+    $('.js-modal-open').on('click',function(){
+        $('.js-modal').fadeIn();
+        return false;
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
+});
+
+</script>
 </head>
 
 <body <?php body_class(); ?>>

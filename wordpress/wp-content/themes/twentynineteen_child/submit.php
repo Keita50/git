@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="./style.css">
-            <title>My Profile</title>
-            <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    </head>
-    <body>
+<?php
+/**
+ * Template Name: submit
+ 
+ 
+ */
+get_header();
+?>
+
+
         <main>
         <section class="form-content">
             <h2>送信完了</h2>
@@ -29,5 +29,6 @@
           mb_send_mail($to, $title, $content,$password);
         ?>
         </main>
-    </body>
-</html>
+        <?php
+get_footer();
+?>

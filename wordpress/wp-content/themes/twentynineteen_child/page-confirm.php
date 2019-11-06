@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./style.css">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WordPress
+ * @subpackage Twenty_Nineteen
+ * @since 1.0.0
+  
+ */
+get_header();
+?>
 
-</head>
-<body>
 	<main>
         <section class="form-content">
             <form action="./submit.php" method="POST" id="form">
@@ -47,5 +55,7 @@
         </section>
 	</main>
     <?php $pageType = 'contact-confirm';include($_SERVER['DOCUMENT_ROOT'] . './footer.php'); ?>
-</body>
-</html>
+
+<?php
+get_footer();
+?>

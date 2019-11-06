@@ -10,3 +10,6 @@
             <span>Keita Igarashi inc.</span>
         </p>    
 </footer>
+</div>
+</body>    
+</html>

@@ -16,29 +16,6 @@
 
 get_header();
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="utf-8">
-            <link rel="stylesheet" href="./style.css">
-            <title>Portofolio Site</title>
-            <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <script type="text/javascript">
-            $(function(){
-                $('a[href^=#]').click(function(){
-                    var speed = 700;
-                    var href= $(this).attr("href");
-                    var target = $(href == "#" || href == "" ? 'html' : href);
-                    var position = target.offset().top;
-                    $("html, body").animate({scrollTop:position}, speed, "swing");
-                    return false;
-                });
-            });
-            </script>
-    </head>
-    <body>
         <main>
             <a id="works"></a>
             <section class="works">
@@ -46,8 +23,16 @@ get_header();
                 <div class="working">
                     <img src="./wp-content/themes/twentynineteen_child/images/work01.jpg" alt="portfolio1">
                     <img src="./wp-content/themes/twentynineteen_child/images/work02.jpg" alt="portfolio2">
+                    <div class="list">
+		<a href="#" rel="modal:open"><img src="./wp-content/themes/twentynineteen_child/images/work01.jpg" alt=""></a>
+		</div>
+		<div id="#" class="modal">
+  <p>Thanks for clicking. That felt good.</p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
                 </div>
             </section>
+            <?php echo get_works(); ?>
             <a id="about"></a>
             <section class="about">                        
                 <div class="about1">                    
@@ -106,8 +91,7 @@ get_header();
             </form>  
             </section>      
         </main>
-    </body>    
-</html>
+
 
 
 
