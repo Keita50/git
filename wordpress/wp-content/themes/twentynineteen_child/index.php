@@ -18,21 +18,21 @@ get_header();
 ?>
         <main>
             <a id="works"></a>
-            <section class="works">
+            <section><div class="works">
                 <h2>Works</h2>            
-                <div class="working">
+                <!-- <div class="working">
                     <img src="./wp-content/themes/twentynineteen_child/images/work01.jpg" alt="portfolio1">
                     <img src="./wp-content/themes/twentynineteen_child/images/work02.jpg" alt="portfolio2">
                     <div class="list">
 		<a href="#" rel="modal:open"><img src="./wp-content/themes/twentynineteen_child/images/work01.jpg" alt=""></a>
-		</div>
+		</div> -->
 		<div id="#" class="modal">
-  <p>Thanks for clicking. That felt good.</p>
   <a href="#" rel="modal:close">Close</a>
 </div>
                 </div>
+                <?php echo get_works(); ?>
             </section>
-            <?php echo get_works(); ?>
+
             <a id="about"></a>
             <section class="about">                        
                 <div class="about1">                    

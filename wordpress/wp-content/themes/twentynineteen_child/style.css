@@ -164,35 +164,21 @@ body{
 }
 
 .works{
-    height: 500px;
+    height: 200px;
     background-color:#242830;
     color: #ffffff;
     margin:0 200px;
-    padding-top: 80px;
 }
 
 .works h2{
     font-size:30px;
-    margin-bottom: 20px;
     text-align: center;
-}
-
-.working{
-    margin:30px 10px 0 20px;
 }
 
 .container{
     width:80%;
     max-width:600px;
     margin:50px auto;
-}
-
-.works img{
-    float:left;
-    margin-right:30px;
-    height: 250px;
-    width: 300px;
-
 }
 
 .about{
@@ -430,7 +416,7 @@ textarea{
 }
 
 .modal{
-    display: none;
+    display:none;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -452,8 +438,18 @@ textarea{
     width: 60%;
 }
 
-.content{
-    height: cover;
-    margin: 0px 200px;
+.work{
     background-color: #242830;
+    height: 200px;
+    margin: 0 200px;
+    text-align: center;
+
+}
+
+.img{
+    background-color: #242830;
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 50px;
 }
